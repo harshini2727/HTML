@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSRTC</title>
+</head>
+<body>
+    <style>
+        .header{
+            height:170px;
+            width:800px;
+            background-color: rgb(206, 214, 231);
+            border-radius: 30px;
+            margin-left: 350px;
+        }
+        legend {
+            background-color: rgb(11, 67, 208);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+    </style>
+
+    <div class="header">
+        <img src="./Telangana_State_Road_Transport_Corporation_logo.png" width="50" style="margin-left: 380px; margin-top: 5px;">
+        <h1 style=" margin-top: 5px;font-size: x-large; color: blue;text-align: center; ">TELANGANA STATE ROAD TRANSPORT CORPORATION</h1>
+        <h1 style=" margin-top: 5px;font-size: x-large; color:black;text-align: center; ">GENERAL BUS PASS APPLICATION</h1>
+    </div>
+    <form action="./action.html">
+        <fieldset style="width: 775px;margin-left: 350px; margin-top: 20px;">
+        <legend>Application details</legend>
+        <label for="name">Name: </label>
+        <input type="text" id="name" style="width: 250px;" autofocus autocomplete="off">
+        <label for="father" style="margin-left: 20px;">Father's/Guardian's Name: </label>
+        <input type="text" id="name" style="width: 250px;">
+        <br>
+        <br>
+        <label for="dob">Date of birth: </label>
+        <input type="date" id="dob" style="width: 210px;">
+        <label for="gender" style="margin-left: 20px;">Gender: </label>
+        <input type="radio" name="gender" style="margin-left: 110px;">Male
+        <input type="radio" name="gender">female
+        <br>
+        <br>
+        <label for="aadhaar">Aadhaar No:</label>
+        <input type="text" id="name" style="width: 210px;">
+        <label for="whatsapp" style="margin-left: 20px;">Whatsapp No:</label>
+        <input type="text" id="name" style="width: 250px; margin-left: 80px;">
+        <br>
+        <br>
+        <label for="email">Email id: </label>
+        <input type="email" id="email" style="width: 235px;">
+        <label for="photo" style="margin-left: 20px;">Passport size Photo: </label>
+        <input type="file" id="photo" style="margin-left: 40px;"><br><br>
+
+    </fieldset>
+
+    <fieldset style="width: 775px;margin-left: 350px; margin-top: 20px;">
+        <legend>Residential Address</legend>
+        <label for="name">Applicants Adress: </label>
+        <textarea id="add"></textarea>
+        <label for="dist" style="margin-left: 20px;">District: </label>
+        <select name="dist" id="dist" style="margin-left: 100px;">
+            <option value="HYDERABAD">HYDERABAD</option>
+            <option value="TELANGANA">TELANGANA</option>
+        </select>
+        <br>
+        <br>
+        <label for="mandal">Mandal: </label>
+        <select name="dist" id="dist" style="margin-left: 70px;">
+            <option value="HYDERABAD">HYDERABAD</option>
+        </select>
+        <label for="village" style="margin-left: 80px;">Village: </label>
+        <select name="village" id="village" style="margin-left: 103px;">
+            <option value="HYDERABAD">HYDERABAD</option>
+        </select>
+        <br>
+        <br>
+        <label for="pin">Pin code:</label>
+        <input type="text" id="pin" style="width: 210px; margin-left: 30px;">
+    </fieldset>
+
+    <fieldset style="width: 775px;margin-left: 350px; margin-top: 20px;">
+        <legend>Pass Type Details</legend>
+        <label for="city">City: </label>
+        <select name="city" id="city" style="margin-left: 10px;">
+            <option value="HYDERABAD">HYDERABAD</option>
+        </select>
+        <br>
+        <br>
+        <label for="pass">Pass Type: </label>
+        <select name="pass" id="pass" style="margin-left: 10px;">
+            <option value="select">--select--</option>
+            <option value="general_pass">General Pass</option>
+            <option value="general_od">General ordinary route pass MTLY</option>
+            <option value="general_mt">General Metro express route pass MTLY</option>
+            <option value="odd">Ordinary Pass</option>
+            <option value="Mt_e">Metro Express Pass</option>
+            <option value="Mt_d">Metro Delux Pass</option>
+        </select>
+    </fieldset>
+
+
+    <fieldset style="width: 775px;margin-left: 350px; margin-top: 20px;">
+        <legend>Mode of Payment & Pass Collection</legend>
+        <label for="payment">Payment Mode: </label>
+        <select name="payment" id="payment" style="margin-left: 10px;">
+            <option value="select">--select--</option>
+            <option value="pay">Payment at counter</option>
+        </select>
+        <br>
+        <br>
+        <label for="pass_del">Pass delivery mode: </label>
+        <select name="pass_del" id="pass_del" style="margin-left: 10px;">
+            <option value="select">--select--</option>
+            <option value="counter">At counter</option>
+        </select>
+        <br>
+        <br>
+        <label for="center">Center at which you want to collect: </label>
+        <select name="center" id="center" style="margin-left: 10px;">
+            <option value="select">--select--</option>
+            <option value="kphb">RTC at KPHB</option>
+            <option value="lb">RTC at LBnagar</option>
+            <option value="koti">RTC at Koti</option>
+            <option value="airport">RTC at airport</option>
+        </select>       
+    </fieldset>
+    <input type="reset" style="margin-left: 700px;margin-top: 40px; background-color: blue; color: white;padding: 5px 10px; border-radius: 10px;">
+    <br>
+    <br>
+    <input type="submit" value="Submit" style="margin-left: 700px; margin-bottom: 50px;background-color: rgb(202, 41, 76); color: white;padding: 5px 10px;border-radius: 10px;">
+    </form>
+</body>
+</html> 
