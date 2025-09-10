@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            display: inline-block;
+            z-index: 1;
+        }
+        .lnav{
+            color: black;
+            background-color: white;
+            padding: 8px 16px;
+            width: 100%;
+            
+        }
+        .rnav p{
+            display: inline-block;
+            padding: 8px 16px;
+        }
+        .header{
+            position: relative;
+        }
+        .head{
+            position: absolute;
+            padding: 12px 24px !important;
+            left: 0;
+            bottom: 0;
+        }
+        .section1 {
+            max-width: 1100px;
+            margin: 80px auto;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .section1 img {
+            width: 45%;
+            float: left;
+            margin-right: 20px;
+        }
+        .section1 .text {
+            width: 50%;
+            float: left;
+        }
+        .section1 h2 {
+            font-size: 30px;
+            margin-top: 30;
+            letter-spacing: 2px;
+            margin-left:150px;
+        }
+        .section1 h4{
+            margin-top: 0;
+            letter-spacing: 2px;
+            margin-left:170px;
+        }
+        .section1 p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-left:30px;
+        }
+        .section2 {
+            max-width: 1100px;
+            margin: 80px auto;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .section2 .content{
+            width: 50%;
+            float: left;
+        }
+        .section2 h2{
+            font-size: 30px;
+            margin-top: 30;
+            letter-spacing: 2px;
+            margin-left: 150px;
+            
+        }.section2 h4{
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .section2 p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+        .section2 img {
+            width: 45%;
+            float: right;
+            margin-left: 20px;
+        }
+        .contact {
+            max-width: 1100px;
+            margin: 80px auto;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .contact h2{
+            font-size: 30px;
+            margin-top: 30;
+            letter-spacing: 2px;
+            
+        }
+        input{
+            padding: 16px 8px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            width: 100%;
+        }
+        .form .p{
+            margin: 15px 0px;
+        }
+        button{
+            color: black;
+            background-color: #f1f1f1;
+            margin-top: 16px;
+            margin-bottom: 16px;
+            border: none;
+            padding: 8px 16px;
+        }
+        footer{
+            color: black;
+            background-color: #f1f1f1;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation-->
+    <div class="nav">
+        <div class="lnav">
+            <p style="display: inline-block;">Gourmet au Catering</p>
+            <div class="rnav" style="float: right !important; margin-right: 30px;">
+                <p style="display: inline-block;">About</p>
+                <p style="display: inline-block;">Menu</p>
+                <p style="display: inline-block;">Contact</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <img src="https://www.w3schools.com/w3images/hamburger.jpg" alt="Burger" width="1500" height="800">
+        <div class="head">
+            <p style="font-size: xx-large;">Le Catering</p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <hr style="color: rgb(185, 182, 182);">
+
+    <!-- PageContent -->
+     <!--About-->
+    <div class="section1">
+        <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" alt="Table">
+        <div class="text">
+            <h2>About Catering</h2>
+            <h4>Tradition since 1889</h4>
+            <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+
+    <hr style="color: rgb(185, 182, 182);">
+
+    <!--Menu-->
+    <div class="section2">
+        <div class="content">
+            <h2>Our Menu</h2>
+            <h4>Bread Basket</h4>
+            <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+            <br>
+            <h4>Honey Almond Granola with Fruits</h4>
+            <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+            <br>
+            <h4>Belgian Waffle</h4>
+            <p>Vanilla flavored batter with malted flour 7.50</p>
+            <br>
+            <h4>Scrambled eggs</h4>
+            <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+            <br>
+            <h4>Blueberry Pancakes</h4>
+            <p>With syrup, butter and lots of berries 8.50</p>
+        </div>
+        <img src="https://www.w3schools.com/w3images/tablesetting.jpg" alt="menu">
+    </div>
+
+    <hr style="color: rgb(185, 182, 182);">
+
+    <!--Contact-->
+    <div class="contact">
+        <h2>Contact</h2>
+        <br>
+        <p>We offer full-service catering for any event, large or small. We understand 
+            your needs and we will cater the food to satisfy the biggerst criteria of 
+            them all, both look and taste. Do not hesitate to contact us.</p>
+        <p style="color: #607d8b; font-size: large;"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
+        <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+        <form>
+            <p><input type="text" placeholder="Name"></p>
+            <p><input type="number" placeholder="How many people"></p>
+            <p><input type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+            <p><input type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+            <p><button type="submit">SEND MESSAGE</button></p>
+        </form>
+    </div>
+    <footer>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank">w3.css</a></p>
+    </footer>
+
+</body>
+</html>
